@@ -6,7 +6,7 @@
 /*   By: thfernan <thfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 09:07:03 by thfernan          #+#    #+#             */
-/*   Updated: 2025/12/30 09:16:43 by thfernan         ###   ########.fr       */
+/*   Updated: 2025/12/30 16:39:07 by thfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,14 @@ char	*ft_find_cmd(char *cmd, char **envp)
 		full_path = ft_strjoin(temp, cmd);
 		free(temp);
 		if (access(full_path, X_OK) == 0)
+		{
+			ft_free(paths);
 			return (full_path);
+		}
 		free(full_path);
 		i++;
 	}
+	ft_free(paths);
 	return (NULL);
 }
 

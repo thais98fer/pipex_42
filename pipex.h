@@ -6,7 +6,7 @@
 /*   By: thfernan <thfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 14:36:29 by thfernan          #+#    #+#             */
-/*   Updated: 2025/12/30 09:20:30 by thfernan         ###   ########.fr       */
+/*   Updated: 2025/12/30 16:37:17 by thfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 int		main(int argc, char **argv, char **envp);
 void	ft_error(void);
+void	ft_free(char **array);
 void	ft_child_process(char **argv, char **envp, int *fd);
 void	ft_parent_process(char **argv, char **envp, int *fd);
 void	ft_exec(char *cmd, char **envp);

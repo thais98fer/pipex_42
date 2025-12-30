@@ -6,7 +6,7 @@
 /*   By: thfernan <thfernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 20:18:28 by thfernan          #+#    #+#             */
-/*   Updated: 2025/12/30 09:00:52 by thfernan         ###   ########.fr       */
+/*   Updated: 2025/12/30 17:27:16 by thfernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,13 @@ void	ft_exec(char *cmd, char **envp)
 	if (!cmd_path)
 	{
 		ft_putstr_fd("command not found\n", 2);
+		ft_free(cmd_args);
 		exit(127);
 	}
 	execve(cmd_path, cmd_args, envp);
+	ft_free(cmd_args);
+	free(cmd_path);
+	exit(127);
 }
 
 void	ft_child_process(char **argv, char **envp, int *fd)
@@ -34,7 +38,7 @@ void	ft_child_process(char **argv, char **envp, int *fd)
 	int	infile;
 
 	infile = open(argv[1], O_RDONLY);
-	if (infile == -1)
+	if (infile < 0)
 		ft_error();
 	dup2(infile, STDIN_FILENO);
 	dup2(fd[1], STDOUT_FILENO);
@@ -46,7 +50,7 @@ void	ft_child_process(char **argv, char **envp, int *fd)
 
 void	ft_parent_process(char **argv, char **envp, int *fd)
 {
-	int outfile;
+	int	outfile;
 
 	outfile = open(argv[4], O_WRONLY | O_CREAT | O_TRUNC, 0777);
 	if (outfile == -1)
@@ -63,8 +67,9 @@ int	main(int argc, char **argv, char **envp)
 {
 	int		fd[2];
 	pid_t	pid;
+	pid_t	pid2;
 
-	if (argc != 5) // Colocar mensagem de erro
+	if (argc != 5)
 		return (1);
 	if (pipe(fd) == -1)
 		ft_error();
@@ -75,8 +80,13 @@ int	main(int argc, char **argv, char **envp)
 		ft_child_process(argv, envp, fd);
 	else
 	{
+		pid2 = fork();
+		if (pid2 == 0)
+			ft_parent_process(argv, envp, fd);
+		close(fd[0]);
+		close(fd[1]);
 		waitpid(pid, NULL, 0);
-		ft_parent_process(argv, envp, fd);
+		waitpid(pid2, NULL, 0);
 	}
 	return (0);
 }

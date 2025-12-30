@@ -1,0 +1,295 @@
+commands.gdb:5: Error in sourced command file:
+No stack.
+The program is not being run.
+
+quit
+EOF [assumed Y]
+commands.gdb:5: Error in sourced command file:
+No stack.
+The program is not being run.
+
+quit
+EOF [assumed Y]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08)
+    at pipex.c:71
+fd = {-8359, 32767}
+pid = 0
+[Attaching after Thread 0x7ffff7d7a740 (LWP 289908) fork to child process 290170]
+[New inferior 2 (process 290170)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Switching to Thread 0x7ffff7d7a740 (LWP 290170)]
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:76
+[Inferior 2 (process 290170) exited with code 01]
+The program is not being run.
+  Num  Description       Connection           Executable        
+  1    process 289908    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+* 2    <null>                                 /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+Undefined command: "inferiors".  Try "help".
+Undefined command: "inferiors".  Try "help".
+[Switching to inferior 1 [process 289908] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 289908))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+__GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+__libc_fork () at ./posix/fork.c:75
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:76
+process 289908 is executing new program: /usr/bin/wc
+Error in re-setting breakpoint 1: Function "main" not defined.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 1 (process 289908) exited normally]
+The program is not being run.
+  Num  Description       Connection           Executable        
+* 1    <null>                                 /usr/bin/wc       
+The program is not being run.
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08)
+    at pipex.c:71
+fd = {-8359, 32767}
+pid = 0
+[Attaching after Thread 0x7ffff7d7a740 (LWP 290949) fork to child process 290962]
+[New inferior 2 (process 290962)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Switching to Thread 0x7ffff7d7a740 (LWP 290962)]
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:76
+process 290962 is executing new program: /usr/bin/grep
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 2 (process 290962) exited with code 01]
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+[Switching to inferior 1 [process 290949] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 290949))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+__GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+__libc_fork () at ./posix/fork.c:75
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:76
+process 290949 is executing new program: /usr/bin/wc
+Error in re-setting breakpoint 1: Function "main" not defined.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 1 (process 290949) exited normally]
+  Num  Description       Connection           Executable        
+* 1    <null>                                 /usr/bin/wc       
+  Num  Description       Connection           Executable        
+* 1    <null>                                 /usr/bin/wc       
+The program is not being run.
+Starting program: /usr/bin/wc infile "grep a" "wc -l" outfile
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 1 (process 291295) exited with code 01]
+
+quit
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08)
+    at pipex.c:71
+fd = {-8359, 32767}
+pid = 0
+argc = 5
+argv = 0x7fffffffdbd8
+envp = 0x7fffffffdc08
+$1 = {
+  0x7fffffffdf6d "/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex", 0x7fffffffdfa9 "infile", 
+  0x7fffffffdfb0 "grep a", 0x7fffffffdfb7 "wc -l", 
+  0x7fffffffdfbd "outfile"}
+[Attaching after Thread 0x7ffff7d7a740 (LWP 291398) fork to child process 291546]
+[New inferior 2 (process 291546)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Switching to Thread 0x7ffff7d7a740 (LWP 291546)]
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:76
+  Num  Description       Connection           Executable        
+  1    process 291398    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+* 2    process 291546    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+[Switching to inferior 1 [process 291398] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 291398))]
+#0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+Run till exit from #0  arch_fork (ctid=0x7ffff7d7aa10)
+    at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+__GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+Run till exit from #0  __GI__Fork ()
+    at ../sysdeps/nptl/_Fork.c:29
+0x00007ffff7e6771f in __libc_fork () at ./posix/fork.c:73
+Value returned is $2 = 291546
+Run till exit from #0  0x00007ffff7e6771f in __libc_fork ()
+    at ./posix/fork.c:73
+0x00000000004013fc in main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:75
+Value returned is $3 = 291546
+Undefined info command: "2".  Try "help info".
+[Switching to inferior 2 [process 291546] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 2.1 (Thread 0x7ffff7d7a740 (LWP 291546))]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08)
+    at pipex.c:76
+ft_child_process (argv=0x7fffffffdbd8, envp=0x7fffffffdc08, fd=0x7fffffffdaa0) at pipex.c:40
+$4 = 5
+  Num  Description       Connection           Executable        
+  1    process 291398    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+* 2    process 291546    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+Run till exit from #0  ft_child_process (argv=0x7fffffffdbd8, 
+    envp=0x7fffffffdc08, fd=0x7fffffffdaa0) at pipex.c:48
+process 291546 is executing new program: /usr/bin/grep
+Warning:
+Cannot insert breakpoint 0.
+Cannot access memory at address 0x401429
+
+[Switching to inferior 1 [process 291398] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 1.1 (Thread 0x7ffff7d7a740 (LWP 291398))]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08)
+    at pipex.c:82
+Warning:
+Cannot insert breakpoint 0.
+Cannot access memory at address 0x401429
+
+Command aborted.
+Warning:
+Cannot insert breakpoint 0.
+Cannot access memory at address 0x401429
+
+Command aborted.
+Warning:
+Cannot insert breakpoint 0.
+Cannot access memory at address 0x401429
+
+Command aborted.
+Undefined info command: "inferioe".  Try "help info".
+  Num  Description       Connection           Executable        
+* 1    process 291398    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+  2    process 291546    1 (native)           /usr/bin/grep     
+
+quit
+EOF [assumed Y]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08)
+    at pipex.c:72
+fd = {-8359, 32767}
+pid = 0
+pid2 = -1075053569
+
+quit
+EOF [assumed Y]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:72
+fd = {-8359, 32767}
+pid = 0
+pid2 = -1075053569
+[Attaching after Thread 0x7ffff7d7a740 (LWP 293778) fork to child process 293784]
+[New inferior 2 (process 293784)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Switching to Thread 0x7ffff7d7a740 (LWP 293784)]
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:77
+process 293784 is executing new program: /usr/bin/grep
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 2 (process 293784) exited with code 01]
+The program is not being run.
+Starting program: /usr/bin/grep 
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 2 (process 293800) exited with code 02]
+
+quit
+EOF [assumed Y]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:72
+fd = {-8359, 32767}
+pid = 0
+pid2 = -1075053569
+[Attaching after Thread 0x7ffff7d7a740 (LWP 293847) fork to child process 293859]
+[New inferior 2 (process 293859)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Switching to Thread 0x7ffff7d7a740 (LWP 293859)]
+main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:77
+
+quit
+EOF [assumed Y]
+#0  main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:72
+fd = {-8359, 32767}
+pid = 0
+pid2 = -1075053569
+[New inferior 2 (process 293957)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New inferior 3 (process 293963)]
+Reading symbols from /usr/lib/debug/.build-id/4f/7b0c955c3d81d7cac1501a2498b69d1d82bfe7.debug...
+Reading symbols from /usr/lib/debug/.build-id/ac/af96d7b1a6bad57b559d646233d5dc1a23257c.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+  Num  Description       Connection           Executable        
+* 1    process 293943    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+  2    process 293957    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+  3    process 293963    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+[Switching to inferior 2 [process 293957] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 2.1 (Thread 0x7ffff7d7a740 (LWP 293957))]
+#0  arch_fork (ctid=0x7ffff7d7aa10) at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+__GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+Run till exit from #0  __GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+0x00007ffff7e6771f in __libc_fork () at ./posix/fork.c:73
+Value returned is $1 = 0
+Run till exit from #0  0x00007ffff7e6771f in __libc_fork () at ./posix/fork.c:73
+0x00000000004013fc in main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:76
+Value returned is $2 = 0
+ft_child_process (argv=0x7fffffffdbd8, envp=0x7fffffffdc08, fd=0x7fffffffdaa0) at pipex.c:40
+[Switching to inferior 3 [process 293963] (/nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex)]
+[Switching to thread 3.1 (Thread 0x7ffff7d7a740 (LWP 293963))]
+#0  arch_fork (ctid=0x7ffff7d7aa10) at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+Run till exit from #0  arch_fork (ctid=0x7ffff7d7aa10) at ../sysdeps/unix/sysv/linux/arch-fork.h:52
+__GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+Run till exit from #0  __GI__Fork () at ../sysdeps/nptl/_Fork.c:29
+0x00007ffff7e6771f in __libc_fork () at ./posix/fork.c:73
+Value returned is $3 = 0
+Run till exit from #0  0x00007ffff7e6771f in __libc_fork () at ./posix/fork.c:73
+0x0000000000401433 in main (argc=5, argv=0x7fffffffdbd8, envp=0x7fffffffdc08) at pipex.c:83
+Value returned is $4 = 0
+ft_parent_process (argv=0x7fffffffdbd8, envp=0x7fffffffdc08, fd=0x7fffffffdaa0) at pipex.c:55
+  Num  Description       Connection           Executable        
+  1    process 293943    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+  2    process 293957    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+* 3    process 293963    1 (native)           /nfs/homes/thfernan/common_core/milestone_2/pipex_git/pipex 
+
+quit
+EOF [assumed Y]
